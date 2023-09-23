@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+
+<html >
+
+<head>
+
+   <title>facebook page</title>
+
+   <style type="text/css"> 
+
+   #header{ 
+
+       height:20%;
+
+       width:100%;
+
+       background-color: rgb(26, 26, 185);
+
+       border:2px solid rgba(15, 2, 2, 0.863);
+
+       padding:50px;
+
+   }
+
+   #page{ 
+
+        height:80%;
+
+       width:100%;
+
+   }
+
+   #lpage{
+
+        height:100%;
+
+       width:39.5%;
+
+       float:left;
+
+       color: rgb(6, 6, 105);
+
+       font-family: Bahnschrift SemiBold;
+
+       font-size: 22px;
+
+       border:2px solid black;
+
+      
+
+      background-image:url(data:image/jpeg;base64,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); height:510px; 
+
+background-size:cover;            
+
+      
+
+      
+
+      }
+
+    #rpage{
+
+        height:80%;
+
+       width:60%;
+
+       float:right;
+
+       background-color: aquamarine;
+
+   }
+
+   #l{
+
+       height:100%;
+
+       width:40%;
+
+       float:left;
+
+        font-family: Segoe UI Black;
+
+       color:white;
+
+       font-size: 70px;
+
+       margin-top: -50px;
+
+       letter-spacing: 1px;
+
+       margin-left: -15px;
+
+
+
+   }
+
+   #r{
+
+       height:100%;
+
+       width:60%;
+
+       float:right;
+
+       margin-top:-60px;
+
+   }
+
+   h1{
+
+       font-family: Segoe UI Black;
+
+       color:white;
+
+       font-size: 70px;
+
+       margin-top: -50px;
+
+       letter-spacing: 1px;
+
+       margin-left: -15px;}
+
+    .right {
+
+  font-size: 35px;
+
+font-weight: bold;
+
+margin-left: 80px;
+
+    }   
+
+
+
+   .margin{
+
+       margin-left: 80px;
+
+   } 
+
+   </style>
+
+<style>  
+
+
+
+</style>
+
+</head>
+
+<body>
+
+    <div id ="header">                               
+
+     <div id="l">
+
+         
+
+            facebook
+
+    </div>
+
+     <div id ="r">
+
+         <table>
+
+             <form>
+
+         <tr>
+
+             <th>
+
+               Email or Phone<br>
+
+                 <input type="text" name="Email or phone" placeholder="Enter Email or Phone">
+
+            </th>
+
+            <th>
+
+               <br> Password<br>
+
+                <input type="password" name="password" placeholder="enter password"><br>
+
+                <a href="https://thumbs.gfycat.com/TartAffectionateHochstettersfrog-max-1mb.gif"><font color="white">forgot password</font></a>
+
+            </th> 
+
+           
+
+            <td>
+
+              <br> <input type="button" name="log in" value="Log in"/>
+
+            </td> 
+
+             <td>
+
+              <br> <input type="reset" name="reset" value="Reset"/>
+
+            </td> 
+
+              
+
+         </tr>    
+
+           </form>
+
+         </table>
+
+    </div>
+
+    </div>
+
+    
+
+    <div id ="page">
+
+          <div id ="lpage">
+
+        
+
+          <b>facebook helps you connect and share with the people in your life</b>
+
+           </div>   
+
+       <div id ="rpage" >
+
+            <form action="https://files.schudio.com/archbishop-temple-school/images/news/Congratulations.jpg">
+
+                 <div class="right">
+
+                Create an account<br>
+
+                <font size="4">It's free and always will be</font><br>
+
+              </div>
+
+              <div class="margin">
+
+                <input type="text" name="first_name" placeholder="First Name">
+
+                <input type="text" name="Surname" placeholder="Surname"><br><br>
+
+                <input type="text" name="  Mobile number or email address" placeholder=" Mobile number or email address" size="46"><br><br>
+
+                <input type="text" name=" Re-enter Mobile number or email address" placeholder="Re-enter Mobile number or email address" size="46"><br><br>
+
+                <input type="password" name="password" placeholder="New password" size="46">
+
+               <br><br> Birthday<br>
+
+               <select name="dropdown">
+
+                <option value="Day" selected>Day</option> 
+
+                <option value="1">1</option> 
+
+                <option value="2">2</option> 
+
+                 <option value="3">3</option> 
+
+                  <option value="4">4</option> 
+
+                   <option value="5">5</option> 
+
+                    <option value="6">6</option> 
+
+                     <option value="7">7</option> 
+
+                      <option value="8">8</option> 
+
+                       <option value="9">9</option> 
+
+                        <option value="10">10</option> 
+
+                         <option value="11">11</option> 
+
+                          <option value="12">12</option> 
+
+                           <option value="13">13</option> 
+
+                           <option value="14">14</option> 
+
+                           <option value="15">15</option> 
+
+                            <option value="16">16</option> 
+
+                             <option value="17">17</option> 
+
+                              <option value="18">18</option> 
+
+                   
+
+                              <option value="19">19</option> 
+
+                              <option value="20">20</option> 
+
+                               <option value="21">21</option> 
+
+                                <option value="22">22</option> 
+
+                                 <option value="23">23</option> 
+
+                                 <option value="24">24</option> 
+
+                                 <option value="25">25</option> 
+
+                                  <option value="26">26</option> 
+
+                                   <option value="27">27</option> 
+
+                                    <option value="28">28</option> 
+
+                          <option value="29">29</option> 
+
+                        <option value="30">30</option> 
+
+                         <option value="31">31</option> 
+
+                </select>  
+
+                <select name="dropdown">
+
+                      <option value="Month" selected>Month</option> 
+
+                      <option value="January">January</option> 
+
+                      <option value="february">february</option> 
+
+                      <option value="March">March</option> 
+
+                      <option value="April">April</option> 
+
+                      <option value="May">May</option> 
+
+                      <option value="June">June</option> 
+
+                      <option value="July">July</option> 
+
+                      <option value="August">August</option> 
+
+                      <option value="September">September</option> 
+
+                      <option value="October">October</option> 
+
+                      <option value="November">November</option> 
+
+                      <option value="December">December</option> 
+
+                     
+
+                
+
+                </select>  
+
+                <select name="dropdown">
+
+                    <option value="Year">Year</option>
+
+                    <option value="2000">2000</option> 
+
+                    <option value="2001">2001</option> 
+
+                    <option value="2002">2002</option> 
+
+                    <option value="2003">2003</option> 
+
+                    
+
+                    <option value="2004">2004</option> 
+
+                    <option value="2005">2005</option> 
+
+                    <option value="2006">2006</option> 
+
+                    <option value="2007">2007</option> 
+
+                    
+
+                    <option value="2008">2008</option> 
+
+                    <option value="2009">2009</option> 
+
+                    <option value="2010">2010</option> 
+
+                    <option value="2011">2011</option> 
+
+                    
+
+                    <option value="2012">2012</option> 
+
+                    <option value="2013">2013</option> 
+
+                    <option value="2014">2014</option> 
+
+                    <option value="2015">2015</option> 
+
+                    
+
+                    <option value="2016">2016</option> 
+
+                    <option value="2017">2017</option> 
+
+                    <option value="2018">2018</option> 
+
+                    <option value="2019">2019</option> 
+
+                    
+
+                    <option value="2020">2020</option> 
+
+                    <option value="2021">2021</option> 
+
+                   
+
+                    
+
+                </select> 
+
+                <font color="blue"><u>Why do I need to provide my date of birth?</u></font>
+
+                <br><br><input type="radio"value="male" name="1">Male  
+
+                <input type="radio" value="female" name="1">female  <br><br>
+
+                <input type="radio" value="terms and conditions" name="2">By click Create an account, you agree to our <font color="blue"><u>Terms</u></font> and that<br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    you have read  our <font color="blue"><u> Data Policy</u></font>,including our <font color="blue"><u>Cookie Use </u></font><br><br>
+
+                <br><br>
+
+                <input type="submit" name="create an account" value="Create an account"/>
+
+                <input type="reset" name="reset" value="reset"/><br><br>
+
+                <font color="blue"><u>Create a Page</u></font>for a celebrity,band or business
+
+              </div>
+
+      </form>  
+
+    </div>
+
+        
+
+    </div>        
+
+</body>
+
+</html>
